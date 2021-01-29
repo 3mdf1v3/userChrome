@@ -1,0 +1,45 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/* Set Font Size In Folder Pane */
+
+#folderTree >treechildren::-moz-tree-cell-text {
+  /*font-family: Lucida Sans !important;*/
+  font-size: 11pt !important; }
+
+/* Set Font Size In Thread Pane */
+
+#threadTree >treechildren::-moz-tree-cell-text {
+  /*font-family: Lucida Sans !important;*/
+  font-size: 10pt !important; }
+
+#threadTree treechildren::-moz-tree-row    {
+/*  border-bottom: 1px dotted grey !important;  */
+  height: 22px !important; }
+
+/* folder list spacing */
+
+#folderTree treechildren::-moz-tree-row    {
+  height: 12px !important; }
+
+#threadTree treechildren::-moz-tree-row(odd) {
+  -moz-appearance: none !important;
+  background-image: none !important;
+  background-color:#e4e7eb !important;
+}
+#threadTree treechildren::-moz-tree-row(selected) {
+  background-color: -moz-Dialog !important;
+}
+#threadTree treechildren::-moz-tree-row(selected, focus) {
+  background-color: Highlight !important;
+}
+
+#folderTree treechildren::-moz-tree-row(selected) {
+  -moz-appearance: none !important;
+  background-image: none !important;
+  background-color: Highlight !important;
+}
+#folderTree treechildren::-moz-tree-row(selected, focus) {
+  -moz-appearance: none !important;
+  background-image: none !important;
+  background-color: Highlight !important;
+}
